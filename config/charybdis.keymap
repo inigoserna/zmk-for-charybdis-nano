@@ -37,7 +37,7 @@
 &trans  &bootloader     &kp NUMBER_7        &kp NUMBER_8       &kp NUMBER_9           &kp NUMBER_0    &trans          &trans          &trans        &trans           &trans           &trans
 &trans  &trans          &kp NUMBER_4        &kp NUMBER_5       &kp NUMBER_6           &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans           &trans
 &trans  &kp LEFT_SHIFT  &mt LCTRL NUMBER_1  &mt LWIN NUMBER_2  &mt LEFT_ALT NUMBER_3  &kp PLUS        &trans          &kp RIGHT_ALT   &kp RWIN      &kp RCTRL        &kp RIGHT_SHIFT  &trans
-                                            &trans             &kp SPACE              &trans          &kp DELETE      &kp RET
+                                            &trans             &kp SPACE              &trans          &kp BACKSPACE   &kp RET
             >;
         };
 
@@ -54,10 +54,10 @@
         F_keys {
             label = "F_keys";
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &kp F1  &kp F2  &kp F3  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans     &trans  &trans
+&trans  &trans          &kp F7        &kp F8       &kp F9           &kp F10    &trans      &trans         &trans    &trans         &trans           &trans
+&trans  &trans          &kp F4        &kp F5       &kp F6           &kp F11    &trans      &trans         &trans    &trans         &trans           &trans
+&trans  &kp LEFT_SHIFT  &mt LCTRL F1  &mt LWIN F2  &mt LEFT_ALT F3  &kp F12    &trans      &kp RIGHT_ALT  &kp RWIN  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &trans
+                                      &trans       &trans           &trans     &kp DELETE  &trans
             >;
         };
 
