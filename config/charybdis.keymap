@@ -27,12 +27,12 @@
 &none  &kp Q             &kp W        &kp E         &kp R        &kp T      &kp Y          &kp U        &kp I           &kp O             &kp P                  &none
 &none  &kp A             &kp S        &kp D         &kp F        &kp G      &kp H          &kp J        &kp K           &kp L             &lt 0 SEMI             &none
 &none  &mt LEFT_SHIFT Z  &mt LCTRL X  &mt LWIN C    &mt LALT V   &kp B      &kp N          &mt RALT M   &mt RWIN COMMA  &mt RCTRL PERIOD  &mt RIGHT_SHIFT SLASH  &none
-                                      &lt 2 ESCAPE  &lt 1 SPACE  &kp TAB    &kp BACKSPACE  &lt 3 ENTER
+                                      &lt 2 ESCAPE  &lt 3 SPACE  &kp TAB    &kp BACKSPACE  &lt 1 ENTER
             >;
         };
 
-        Lower {
-            label = "Lower";
+        Number {
+            label = "Number";
             bindings = <
 &trans  &bootloader     &kp NUMBER_7        &kp NUMBER_8       &kp NUMBER_9           &kp NUMBER_0    &trans          &trans          &trans        &trans           &trans           &trans
 &trans  &trans          &kp NUMBER_4        &kp NUMBER_5       &kp NUMBER_6           &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans           &trans
@@ -41,7 +41,7 @@
             >;
         };
 
-        Raise {
+        Symbol {
             label = "Raise";
             bindings = <
 &trans  &bt BT_CLR    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
