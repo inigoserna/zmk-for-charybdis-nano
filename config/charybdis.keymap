@@ -34,10 +34,10 @@
         Number {
             label = "Number";
             bindings = <
-&trans  &bootloader     &kp NUMBER_7        &kp NUMBER_8       &kp NUMBER_9           &kp NUMBER_0    &trans          &trans          &trans        &trans           &trans           &trans
-&trans  &trans          &kp NUMBER_4        &kp NUMBER_5       &kp NUMBER_6           &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans           &trans
-&trans  &kp LEFT_SHIFT  &mt LCTRL NUMBER_1  &mt LWIN NUMBER_2  &mt LEFT_ALT NUMBER_3  &kp PLUS        &trans          &kp RIGHT_ALT   &kp RWIN      &kp RCTRL        &kp RIGHT_SHIFT  &trans
-                                            &trans             &kp SPACE              &trans          &kp BACKSPACE   &kp RET
+&trans  &bootloader  &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &trans          &trans          &trans        &trans           &trans           &trans
+&trans  &kp LSHFT    &kp NUMBER_4       &kp NUMBER_5       &kp NUMBER_6  &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans           &trans
+&trans  &kp LCTRL    &mt LWIN NUMBER_1  &mt LALT NUMBER_2  &kp NUMBER_3  &kp PLUS        &trans          &kp RIGHT_ALT   &kp RWIN      &kp RCTRL        &kp RIGHT_SHIFT  &trans
+                                        &trans             &kp SPACE     &trans          &kp BACKSPACE   &kp RET
             >;
         };
 
