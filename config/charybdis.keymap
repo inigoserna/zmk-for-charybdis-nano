@@ -34,7 +34,7 @@
         Number {
             label = "Number";
             bindings = <
-&trans  &bootloader  &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &trans          &trans          &trans        &trans           &trans     &trans
+&trans  &bootloader  &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &bootloader     &trans          &trans        &trans           &trans     &trans
 &trans  &kp LSHFT    &kp NUMBER_4       &kp NUMBER_5       &kp NUMBER_6  &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RSHFT  &trans
 &trans  &kp LCTRL    &mt LWIN NUMBER_1  &mt LALT NUMBER_2  &kp NUMBER_3  &kp PLUS        &trans          &trans          &kp RALT      &kp RWIN         &kp RCTRL  &trans
                                         &trans             &kp SPACE     &trans          &kp BACKSPACE   &kp RET
