@@ -6,14 +6,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    tapping-term-ms = <350>;
-    flavor = "tap-preferred";
+    tapping-term-ms = <450>;
+    flavor = "tap-unless-interrupted";
     quick-tap-ms = <250>;
 };
 
 &mt {
     tapping-term-ms = <350>;
-    flavor = "tap-preferred";
+    flavor = "tap-unless-interrupted";
     quick-tap-ms = <250>;
 };
 
