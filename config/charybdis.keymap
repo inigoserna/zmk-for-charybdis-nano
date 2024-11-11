@@ -34,10 +34,10 @@
         Number {
             label = "Number";
             bindings = <
-&trans  &bootloader  &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &bootloader     &trans          &trans        &trans           &trans     &trans
-&trans  &kp LSHFT    &kp NUMBER_4       &kp NUMBER_5       &kp NUMBER_6  &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RSHFT  &trans
-&trans  &kp LCTRL    &mt LWIN NUMBER_1  &mt LALT NUMBER_2  &kp NUMBER_3  &kp PLUS        &trans          &trans          &kp RALT      &kp RWIN         &kp RCTRL  &trans
-                                        &trans             &kp SPACE     &trans          &kp BACKSPACE   &kp RET
+&trans  &trans     &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &trans          &trans          &trans        &trans           &bootloader  &trans
+&trans  &kp LSHFT  &kp NUMBER_4       &kp NUMBER_5       &kp NUMBER_6  &kp MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RSHFT    &trans
+&trans  &kp LCTRL  &mt LWIN NUMBER_1  &mt LALT NUMBER_2  &kp NUMBER_3  &kp PLUS        &trans          &trans          &kp RALT      &kp RWIN         &kp RCTRL    &trans
+                                      &trans             &kp SPACE     &trans          &kp BACKSPACE   &kp RET
             >;
         };
 
@@ -46,7 +46,7 @@
             bindings = <
 &trans  &bt BT_CLR    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
 &trans  &trans        &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &to 0           &kp UNDER  &kp EQUAL    &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_TOG  &bootloader   &trans        &trans        &trans          &kp MINUS  &kp PLUS     &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &out OUT_TOG  &trans        &trans        &trans        &trans          &kp MINUS  &kp PLUS     &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                                     &kp LGUI      &kp SPACE     &kp LEFT_ALT    &trans     &bootloader
             >;
         };
@@ -54,10 +54,10 @@
         F_keys {
             label = "F_keys";
             bindings = <
-&trans  &trans     &kp F7       &kp F8       &kp F9  &kp F10    &trans      &trans  &trans    &trans    &trans     &trans
-&trans  &kp LSHFT  &kp F4       &kp F5       &kp F6  &kp F11    &trans      &trans  &trans    &trans    &kp RSHFT  &trans
-&trans  &kp LCTRL  &mt LWIN F1  &mt LALT F2  &kp F3  &kp F12    &trans      &trans  &kp RALT  &kp RGUI  &kp RALT   &trans
-                                &trans       &trans  &trans     &kp DELETE  &trans
+&trans  &bootloader  &kp F7       &kp F8       &kp F9  &kp F10    &trans      &trans  &trans    &trans    &trans     &trans
+&trans  &kp LSHFT    &kp F4       &kp F5       &kp F6  &kp F11    &trans      &trans  &trans    &trans    &kp RSHFT  &trans
+&trans  &kp LCTRL    &mt LWIN F1  &mt LALT F2  &kp F3  &kp F12    &trans      &trans  &kp RALT  &kp RGUI  &kp RALT   &trans
+                                  &trans       &trans  &trans     &kp DELETE  &trans
             >;
         };
 
