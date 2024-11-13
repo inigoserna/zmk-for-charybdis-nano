@@ -34,7 +34,6 @@
         scroll-layers = <3>;
         // snipe-layers = <>;
         automouse-layer = <4>;
-        motion-threshold = <10>;
     };
 };
 
