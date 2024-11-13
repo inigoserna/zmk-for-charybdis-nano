@@ -8,14 +8,14 @@
 &lt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <130>;
     quick-tap-ms = <200>;
 };
 
 &mt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <130>;
     quick-tap-ms = <200>;
 };
 
