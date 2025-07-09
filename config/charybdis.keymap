@@ -37,7 +37,7 @@
             label = "Number";
             bindings = <
 &none  &kp EXCLAMATION  &kp AT          &kp HASH           &kp DLLR    &kp PRCNT     &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &none
-&none  &kp CARET        &kp AMPERSAND   &kp SINGLE_QUOTE   &kp LPAR    &kp LBKT      &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kb ASTERISK  &none
+&none  &kp CARET        &kp AMPERSAND   &kp SINGLE_QUOTE   &kp LPAR    &kp LBKT      &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &none
 &none  &kp GRAVE        &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp RPAR    &kp RBKT      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
                                         &kp LSHIFT         &none       &trans        &kp COMMA     &kp PERIOD
             >;
@@ -47,7 +47,7 @@
             label = "Movement";
             bindings = <
 &none  &kp RA(GRAVE)  &none  &none       &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
-&none  &none          &none  &none       &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kb LC(PG_DN)  &none
+&none  &none          &none  &none       &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
 &none  &kp SCLk       &none  &none       &kp INSERT       &LC(TAB)       &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
                              &kp LSHIFT  &kp LCTRL        &kp LALT       &kp LGUI    &trans
             >;
