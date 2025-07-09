@@ -29,8 +29,7 @@
 &none  &kp Q         &kp W       &kp F       &kp P            &kp G          &kp J        &kp L         &kp U        &kp Y       &kp SEMI      &none
 &none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      &kp D          &kp H        &mt RCTRL N   &mt LALT E   &mt LGUI I  &mt RSHIFT O  &none
 &none  &kp Z         &kp X       &kp C       &kp V            &kp B          &kp K        &kp M         &kp COMMA    &kp PERIOD  &lt 4 SLASH   &none
-#                                 &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &RALT ENTER  &lt 2 DELETE
-                                   &lt 2 ESCAPE  &lt 3 SPACE  &kp TAB    &kp BACKSPACE  &lt 1 ENTER
+                                 &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &RALT ENTER  &lt 2 DELETE
             >;
         };
 
@@ -64,7 +63,7 @@
             >;
         };
 
-        GUI {
+        GUI_keys {
             label = "GUI";
             bindings = <
 &none  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)     &kp LG(N5)       &kp LG(N6)    &kp LG(N7)  &kp LG(N8)     &kp LG(N9)     &kp LG(N0)  &none
