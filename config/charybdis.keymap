@@ -1,8 +1,10 @@
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
+#include <behaviors/mouse_keys.dtsi>                                                                                                                                                                                                                     
+#include <behaviors.dtsi>                                                                                                                                                                                                                                
+#include <dt-bindings/zmk/bt.h>                                                                                                                                                                                                                          
+#include <dt-bindings/zmk/keys.h>                                                                                                                                                                                                                        
+#include <dt-bindings/zmk/mouse.h>                                                                                                                                                                                                                       
+#include <dt-bindings/zmk/outputs.h>  
+
 
 &lt {
     tapping-term-ms = <250>;
@@ -21,25 +23,24 @@
 / {
     macros {
         mc_lms_toggle: mc_lms_toggle {
+            label = "MC_LMS_TOGGLE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(S) &kp SPACE>;
-            label = "MC_LMS_TOGGLE";
         };
 
         mc_lms: mc_lms {
+            label = "MC_LMS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(S) &kp S>;
-            label = "MC_LMS";
         };
 
         mc_web_copyurl: mc_web_copyurl {
+            label = "MC_WEB_COPYURL";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(L)>, <&macro_wait_time 50>, <&kp LC(C) &kp F6>;
-
-            label = "MC_WEB_COPYURL";
         };
     };
 
