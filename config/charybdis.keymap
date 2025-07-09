@@ -26,10 +26,10 @@
         Base {
             label = "Colemak";
             bindings = <
-&none  &kp Q         &kp W       &kp F       &kp P            &kp G          &kp J        &kp L         &kp U        &kp Y       &kp SEMI      &none
-&none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      &kp D          &kp H        &mt RCTRL N   &mt LALT E   &mt LGUI I  &mt RSHIFT O  &none
-&none  &kp Z         &kp X       &kp C       &kp V            &kp B          &kp K        &kp M         &kp COMMA    &kp PERIOD  &lt 4 SLASH   &none
-                                 &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &RALT ENTER  &lt 2 DELETE
+&none  &kp Q         &kp W       &kp F       &kp P            &kp G          &kp J           &kp L         &kp U        &kp Y       &kp SEMI      &none
+&none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      &kp D          &kp H           &mt RCTRL N   &mt LALT E   &mt LGUI I  &mt RSHIFT O  &none
+&none  &kp Z         &kp X       &kp C       &kp V            &kp B          &kp K           &kp M         &kp COMMA    &kp PERIOD  &lt 4 SLASH   &none
+                                 &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &mt RALT ENTER  &lt 2 DELETE
             >;
         };
 
