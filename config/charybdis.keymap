@@ -48,7 +48,7 @@
             bindings = <
 &none  &kp RA(GRAVE)  &none  &none       &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
 &none  &none          &none  &none       &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
-&none  &kp SCLk       &none  &none       &kp INSERT       &LC(TAB)       &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
+&none  &kp SCLK       &none  &none       &kp INSERT       &kp LC(TAB)    &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
                              &kp LSHIFT  &kp LCTRL        &kp LALT       &kp LGUI    &trans
             >;
         };
@@ -56,10 +56,10 @@
         F_keys {
             label = "Function";
             bindings = <
-&none  &none       &none  &none       &none   &kp C_VOL_UP    &kp F12   &kp F7  &kp F8  &kp F9  &none  &none
-&none  &none       &none  &none       &none   &kp C_VOL_DN    &kp F11   &kp F4  &kp F5  &kp F6  &none  &none
-&none  &LC(PSCRN)  &none  &none       &none   &kp C_MUTE      &kp F10   &kp F1  &kp F2  &kp F3  &none  &none
-                          &kp LSHIFT  &trans  &none           &kp RGUI  &none
+&none  &none          &none  &none       &none   &kp C_VOL_UP    &kp F12   &kp F7  &kp F8  &kp F9  &none  &none
+&none  &none          &none  &none       &none   &kp C_VOL_DN    &kp F11   &kp F4  &kp F5  &kp F6  &none  &none
+&none  &kp LC(PSCRN)  &none  &none       &none   &kp C_MUTE      &kp F10   &kp F1  &kp F2  &kp F3  &none  &none
+                             &kp LSHIFT  &trans  &none           &kp RGUI  &none
             >;
         };
 
