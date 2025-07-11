@@ -89,7 +89,7 @@
 //                                  &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &mt RALT ENTER  &lt 2 DELETE
 //             >;
 //         };
-//         Base {
+        Base {
             label = "Colemak";
             bindings = <
 &none  AS(Q)         AS(W)       AS(F)       AS(P)            AS(G)          AS(J)           AS(L)         AS(U)       AS(Y)       AS(SEMI)      &none
