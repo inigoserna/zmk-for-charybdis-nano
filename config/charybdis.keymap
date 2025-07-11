@@ -35,6 +35,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        td_s4q: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 4 SLASH>, <&kp QMARK>;
+        };
     };
 
 
@@ -105,7 +112,7 @@
             bindings = <
 &none  AS(Q)         AS(W)       AS(F)       AS(P)            AS(G)          AS(J)           AS(L)         AS(U)       AS(Y)       AS(SEMI)      &none
 &none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      AS(D)          AS(H)           &mt RCTRL N   &mt LALT E  &mt LGUI I  &mt RSHIFT O  &none
-&none  AS(Z)         AS(X)       AS(C)       AS(V)            AS(B)          AS(K)           AS(M)         AS(COMMA)   AS(PERIOD)  &lt 4 SLASH   &none
+&none  AS(Z)         AS(X)       AS(C)       AS(V)            AS(B)          AS(K)           AS(M)         AS(COMMA)   AS(PERIOD)  &td_s4q       &none
                                  &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &mt RALT ENTER  &lt 2 DELETE
             >;
         };
