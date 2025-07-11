@@ -32,7 +32,7 @@
             #binding-cells = <2>;
             tapping_term_ms = <135>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "tap-preferred";s
             bindings = <&kp>, <&kp>;
         };
 
@@ -160,10 +160,10 @@
         Mouse {
             label = "Mouse";
             bindings = <
-&none  &none      &none     &none     &none       &none       &none  &none     &none     &none     &to 3       &none
-&none  &none      &none     &none     &none       &none       &none  &mkp MB1  &mkp MB2  &mkp MB3  &none       &none
-&none  &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHIFT  &none       &none  &mkp MB1  &mkp MB2  &mkp MB3  &kp LSHIFT  &none
-                            &mkp MB1  &mkp MB2    &mkp MB3    &to 5  &to 0
+&none  &none      &none     &none     &none       &msc SCRL_UP      &none  &none     &none     &none     &to 3       &none
+&none  &none      &none     &none     &none       &msc SCRL_DOWN    &none  &mkp MB1  &mkp MB2  &mkp MB3  &none       &none
+&none  &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHIFT  &none             &none  &mkp MB1  &mkp MB2  &mkp MB3  &kp LSHIFT  &none
+                            &mkp MB1  &mkp MB2    &mkp MB3          &to 5  &to 0
             >;
         };
 
