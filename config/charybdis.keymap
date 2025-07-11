@@ -6,6 +6,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
+#define AS(keycode) &as LS(keycode) keycode
+
+
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -23,6 +26,18 @@
 
 
 / {
+    behaviors {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+
     macros {
         mc_lms_toggle: mc_lms_toggle {
             label = "MC_LMS_TOGGLE";
@@ -65,22 +80,40 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+//         Base {
+//             label = "Colemak";
+//             bindings = <
+// &none  &kp Q         &kp W       &kp F       &kp P            &kp G          &kp J           &kp L         &kp U       &kp Y       &kp SEMI      &none
+// &none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      &kp D          &kp H           &mt RCTRL N   &mt LALT E  &mt LGUI I  &mt RSHIFT O  &none
+// &none  &kp Z         &kp X       &kp C       &kp V            &kp B          &kp K           &kp M         &kp COMMA   &kp PERIOD  &lt 4 SLASH   &none
+//                                  &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &mt RALT ENTER  &lt 2 DELETE
+//             >;
+//         };
+//         Base {
             label = "Colemak";
             bindings = <
-&none  &kp Q         &kp W       &kp F       &kp P            &kp G          &kp J           &kp L         &kp U       &kp Y       &kp SEMI      &none
-&none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      &kp D          &kp H           &mt RCTRL N   &mt LALT E  &mt LGUI I  &mt RSHIFT O  &none
-&none  &kp Z         &kp X       &kp C       &kp V            &kp B          &kp K           &kp M         &kp COMMA   &kp PERIOD  &lt 4 SLASH   &none
+&none  AS(Q)         AS(W)       AS(F)       AS(P)            AS(G)          AS(J)           AS(L)         AS(U)       AS(Y)       AS(SEMI)      &none
+&none  &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T      AS(D)          AS(H)           &mt RCTRL N   &mt LALT E  &mt LGUI I  &mt RSHIFT O  &none
+&none  AS(Z)         AS(X)       AS(C)       AS(V)            AS(B)          AS(K)           AS(M)         AS(COMMA)   AS(PERIOD)  &lt 4 SLASH   &none
                                  &lt 4 TAB   &lt 3 BACKSPACE  &lt 1 SPACE    &mt RALT ENTER  &lt 2 DELETE
             >;
         };
 
-        Number {
+//         Number {
+//             label = "Number";
+//             bindings = <
+// &none  &kp EXCLAMATION  &kp AT         &kp HASH           &kp DLLR  &kp PRCNT    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &none
+// &none  &kp CARET        &kp AMPERSAND  &kp SINGLE_QUOTE   &kp LPAR  &kp LBKT     &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &none
+// &none  &kp GRAVE        &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp RPAR  &kp RBKT     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+//                                        &kp LSHIFT         &none     &to 0        &kp COMMA     &kp PERIOD
+//             >;
+//         };
+//         Number {
             label = "Number";
             bindings = <
 &none  &kp EXCLAMATION  &kp AT         &kp HASH           &kp DLLR  &kp PRCNT    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &none
-&none  &kp CARET        &kp AMPERSAND  &kp SINGLE_QUOTE   &kp LPAR  &kp LBKT     &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &none
-&none  &kp GRAVE        &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp RPAR  &kp RBKT     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+&none  &kp CARET        &kp AMPERSAND  &kp SINGLE_QUOTE   &kp LPAR  AS(LBKT)     &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &none
+&none  AS(GRAVE)        AS(BACKSLASH)  &kp DOUBLE_QUOTES  &kp RPAR  AS(RBKT)     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
                                        &kp LSHIFT         &none     &to 0        &kp COMMA     &kp PERIOD
             >;
         };
