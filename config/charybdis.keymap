@@ -41,7 +41,7 @@
         mc_web_copyurl: mc_web_copyurl {
             label = "MC_WEB_COPYURL";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            binding-cells = <0>;
             bindings = <&kp LC(L)>, <&macro_wait_time 50>, <&kp LC(C) &kp F6>;
         };
     };
@@ -76,7 +76,7 @@
 &none  &kp EXCLAMATION  &kp AT         &kp HASH           &kp DLLR  &kp PRCNT    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &none
 &none  &kp CARET        &kp AMPERSAND  &kp SINGLE_QUOTE   &kp LPAR  &kp LBKT     &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &none
 &none  &kp GRAVE        &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp RPAR  &kp RBKT     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
-                                       &kp LSHIFT         &none     &trans       &kp COMMA     &kp PERIOD
+                                       &kp LSHIFT         &none     &to 0        &kp COMMA     &kp PERIOD
             >;
         };
 
@@ -86,7 +86,7 @@
 &none  &kp RA(GRAVE)  &none  &none     &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
 &none  &caps_word     &none  &none     &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
 &none  &kp SLCK       &none  &none     &kp INSERT       &kp LC(TAB)    &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
-                             &mkp MB1  &mkp MB2         &mkp MB3       &kp LGUI    &trans
+                             &mkp MB1  &mkp MB2         &mkp MB3       &kp LGUI    &to 0
             >;
         };
 
