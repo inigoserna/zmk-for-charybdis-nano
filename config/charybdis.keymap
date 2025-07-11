@@ -26,6 +26,7 @@
 
 
 / {
+    // Behaviors
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -44,7 +45,7 @@
         };
     };
 
-
+    // Macros
     macros {
         mc_lms_toggle: mc_lms_toggle {
             label = "MC_LMS_TOGGLE";
@@ -68,7 +69,7 @@
         };
     };
 
-
+   // Combos
    combos {
         compatible = "zmk,combos";
         combo_l3 {
@@ -88,7 +89,7 @@
         };
     };
 
-
+    // Keymap
     keymap {
         compatible = "zmk,keymap";
 
@@ -132,11 +133,11 @@
             >;
         };
 
-        Move {
-            label = "Movement";
+        Cursor {
+            label = "Cursor";
             bindings = <
 &none  &kp RA(GRAVE)  &none  &none     &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
-&none  &caps_word     &none  &none     &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
+&none  &caps_word     &none  &none     &kp PAUSE_BREAK  &soft_off      &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
 &none  &kp SLCK       &none  &none     &kp INSERT       &kp LC(TAB)    &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
                              &mkp MB1  &mkp MB2         &mkp MB3       &kp LGUI    &to 0
             >;
