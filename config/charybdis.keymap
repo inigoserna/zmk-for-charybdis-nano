@@ -79,7 +79,7 @@
         combo_l5 {
             timeout-ms = <50>;
             key-positions = <5 17>;
-            bindings = <&to 5>;
+            bindings = <&tog 5>;
         };
         combo_mb1 {
             timeout-ms = <50>;
