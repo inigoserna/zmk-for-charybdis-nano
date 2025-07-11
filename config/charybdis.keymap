@@ -98,10 +98,10 @@
         Fn_keys {
             label = "Fn";
             bindings = <
-&none  &none          &none  &none       &none   &kp C_VOL_UP    &kp F12   &kp F7  &kp F8  &kp F9  &mc_lms_toggle   &none
-&none  &none          &none  &none       &none   &kp C_VOL_DN    &kp F11   &kp F4  &kp F5  &kp F6  &mc_lms          &none
-&none  &kp LC(PSCRN)  &none  &none       &none   &kp C_MUTE      &kp F10   &kp F1  &kp F2  &kp F3  &mc_web_copyurl  &none
-                             &kp LSHIFT  &to 0   &to 1           &kp RGUI  &to 2
+&none  &none          &none  &bt BT_CLR  &bt BT_SEL 0  &kp C_VOL_UP    &kp F12   &kp F7  &kp F8  &kp F9  &mc_lms_toggle   &none
+&none  &none          &none  &none       &bt BT_SEL 1  &kp C_VOL_DN    &kp F11   &kp F4  &kp F5  &kp F6  &mc_lms          &none
+&none  &kp LC(PSCRN)  &none  &none       &bt BT_SEL 2  &kp C_MUTE      &kp F10   &kp F1  &kp F2  &kp F3  &mc_web_copyurl  &none
+                             &kp LSHIFT  &to 0         &to 1           &kp RGUI  &to 2
             >;
         };
 
