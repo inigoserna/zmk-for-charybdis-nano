@@ -41,7 +41,7 @@
         mc_web_copyurl: mc_web_copyurl {
             label = "MC_WEB_COPYURL";
             compatible = "zmk,behavior-macro";
-            binding-cells = <0>;
+            #binding-cells = <0>;
             bindings = <&kp LC(L)>, <&macro_wait_time 50>, <&kp LC(C) &kp F6>;
         };
     };
