@@ -72,20 +72,20 @@
         Move {
             label = "Movement";
             bindings = <
-&none  &kp RA(GRAVE)  &none  &none      &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
-&none  &caps_word     &none  &none      &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
-&none  &kp SLCK       &none  &none      &kp INSERT       &kp LC(TAB)    &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
-                             &mkp LCLK  &mkp MCLK        &mkp RCLK      &kp LGUI    &trans
+&none  &kp RA(GRAVE)  &none  &none     &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
+&none  &caps_word     &none  &none     &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
+&none  &kp SLCK       &none  &none     &kp INSERT       &kp LC(TAB)    &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
+                             &mkp MB1  &mkp MB2         &mkp MB3       &kp LGUI    &trans
             >;
         };
 
-        F_keys {
-            label = "Function";
+        Fn_keys {
+            label = "Fn";
             bindings = <
 &none  &none          &none  &none       &none   &kp C_VOL_UP    &kp F12   &kp F7  &kp F8  &kp F9  &mc_lms_toggle   &none
 &none  &none          &none  &none       &none   &kp C_VOL_DN    &kp F11   &kp F4  &kp F5  &kp F6  &mc_lms          &none
 &none  &kp LC(PSCRN)  &none  &none       &none   &kp C_MUTE      &kp F10   &kp F1  &kp F2  &kp F3  &mc_web_copyurl  &none
-                             &kp LSHIFT  &trans  &none           &kp RGUI  &none
+                             &kp LSHIFT  &to 0   &to 1           &kp RGUI  &to 2
             >;
         };
 
@@ -102,20 +102,10 @@
         Mouse {
             label = "Mouse";
             bindings = <
-&none  &none      &none     &none      &none       &none        &none  &none      &none      &none      &to 3       &none
-&none  &none      &none     &none      &none       &none        &none  &mkp LCLK  &mkp RCLK  &mkp MCLK  &none       &none
-&none  &kp LCTRL  &kp LGUI  &kp LALT   &kp LSHIFT  &none        &none  &mkp LCLK  &mkp RCLK  &mkp MCLK  &kp LSHIFT  &none
-                            &mkp LCLK  &mkp RCLK   &mkp MCLK    &to 5  &to 0
-            >;
-        };
-
-        MouseScroll {
-            label = "MouseScroll";
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none
+&none  &none      &none     &none     &none       &none       &none  &none     &none     &none     &to 3       &none
+&none  &none      &none     &none     &none       &none       &none  &mkp MB1  &mkp MB2  &mkp MB3  &none       &none
+&none  &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHIFT  &none       &none  &mkp MB1  &mkp MB2  &mkp MB3  &kp LSHIFT  &none
+                            &mkp MB1  &mkp MB2    &mkp MB3    &to 5  &to 0
             >;
         };
 
@@ -128,5 +118,16 @@
                      &none  &none  &none    &none  &none
             >;
         };
+
+        Extra {
+            label = "Extra";
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none
+            >;
+        };
+
     };
 };
