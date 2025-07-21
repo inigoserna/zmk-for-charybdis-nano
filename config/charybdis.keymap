@@ -136,8 +136,8 @@
         Cursor {
             label = "Cursor";
             bindings = <
-&none  &kp RA(GRAVE)  &none  &none     &none            &bootloader    &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
-&none  &caps_word     &none  &none     &kp PAUSE_BREAK  &soft_off      &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
+&none  &kp RA(GRAVE)  &none  &none     &none            &none          &kp HOME    &kp PG_UP     &kp UP        &kp PG_DN      &kp LC(PG_UP)  &none
+&none  &caps_word     &none  &none     &kp PAUSE_BREAK  &none          &kp END     &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(PG_DN)  &none
 &none  &kp SLCK       &none  &none     &kp INSERT       &kp LC(TAB)    &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp ESC        &none
                              &mkp MB1  &mkp MB2         &mkp MB3       &kp LGUI    &to 0
             >;
@@ -166,10 +166,10 @@
         Mouse {
             label = "Mouse";
             bindings = <
-&none  &none      &none     &none     &none       &msc SCRL_UP      &none  &none     &none     &none     &to 3       &none
-&none  &none      &none     &none     &none       &msc SCRL_DOWN    &none  &mkp MB1  &mkp MB2  &mkp MB3  &mo 6       &none
-&none  &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHIFT  &none             &none  &mkp MB1  &mkp MB2  &mkp MB3  &kp LSHIFT  &none
-                            &mkp MB1  &mkp MB2    &mkp MB3          &to 5  &to 0
+&none  &bootloader  &none     &none     &none       &msc SCRL_UP      &bootloader  &none     &none     &none     &to 3       &none
+&none  &soft_off    &none     &none     &none       &msc SCRL_DOWN    &soft_off    &mkp MB1  &mkp MB2  &mkp MB3  &mo 6       &none
+&none  &kp LCTRL    &kp LGUI  &kp LALT  &kp LSHIFT  &none             &none        &mkp MB1  &mkp MB2  &mkp MB3  &kp LSHIFT  &none
+                              &mkp MB1  &mkp MB2    &mkp MB3          &to 5        &to 0
             >;
         };
 
